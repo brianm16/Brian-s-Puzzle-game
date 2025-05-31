@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); /* Adjust for puzzle size */
+    grid-template-rows: repeat(3, 80px);    /* Adjust for puzzle size */
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tile:hover {
+    background-color: #45a049;
+}
+
+.empty-tile {
+    background-color: #ddd;
+    color: transparent;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+#shuffle-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#shuffle-button:hover {
+    background-color: #0056b3;
+}
+
+#moves {
+    font-size: 1em;
+    margin-top: 10px;
+}
